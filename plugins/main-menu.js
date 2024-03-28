@@ -33,9 +33,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   let more = String.fromCharCode(8206)
   let readMore = more.repeat(850)
   let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
-// الوقت بعُمان
-  const time = moment.tz('Asia/Muscat').format('HH A')
-  let wib = moment.tz('Asia/Muscat').format('hh:mm:ss A')
+// الوقت بمصر  const time = moment.tz('Africa/Cairo').format('HH A')
+  let wib = moment.tz('Africa/Cairo').format('hh:mm:ss A')
   
   let str = `
 ❆╼━━❆ •﹝📜﹞• ❆━━╾❆
@@ -62,7 +61,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 *❲  التقویم ❳ ⬳ ⌝📅⌞*
 *• ∙ ∙━━╍━﹝🌀﹞━╍━━∙ ∙ •*
 
-*❍┇بتوقيت سلطنة عُـمــان-🇴🇲-*
+*❍┇بتوقيت مـصـر 🇪🇬-*
 ❒┇الوقت: *${wib}*
 ❒┇التاریخ: *${date}*
 
@@ -93,7 +92,7 @@ function clockString(ms) {
 }
 
 function ucapan() {
-  const time = moment.tz('Asia/Muscat').format('HH A')
+  const time = moment.tz('Africa/Cairo').format('HH A')
   let res = "صباح الخير ☀️"
   if (time >= 4) {
     res = "صباح الخير 🌄"
